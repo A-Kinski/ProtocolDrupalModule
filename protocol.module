@@ -1,0 +1,12 @@
+<?php
+function protocol_menu() {
+    $items = array();
+    $items['protocol-page'] = array(
+	'title' => 'Protocol',
+	'page callback' => 'drupal_get_form',
+	'page arguments' => array('protocol_page_form'),
+	'access callback' => TRUE,
+	'file' => 'protocol.forms.inc',
+    );
+    return $items;
+}
